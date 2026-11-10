@@ -6,7 +6,7 @@ function App() {
 
   const [bookedSeats, setBookedSeats] = useState(() => {
     const saved = localStorage.getItem("bookedSeats");
-    return saved !== null ? Number(saved) : 15;
+    return saved !== null ? Number(saved) : 0;
   });
 
   const [bookings, setBookings] = useState(() => {
